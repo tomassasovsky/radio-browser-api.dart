@@ -12,13 +12,13 @@ class StationCheckStep {
   /// {@macro station_check_step_struct}
   const StationCheckStep({
     required this.stepUUID,
-    this.parentStepUUID,
     required this.checkUUID,
     required this.stationUUID,
+    required this.creationTimestamp,
     required this.url,
+    this.parentStepUUID,
     this.urlType,
     this.error,
-    required this.creationTimestamp,
   });
 
   /// {@macro station_check_step_struct}
