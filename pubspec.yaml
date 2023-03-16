@@ -1,0 +1,18 @@
+name: radio_browser_api
+description: An HTTP client for Radio Browser
+version: 0.1.0+1
+
+environment:
+  sdk: ">=2.19.0 <3.0.0"
+
+dependencies:
+  equatable: ^2.0.5
+  http: ^0.13.5
+  json_annotation: ^4.8.0
+
+dev_dependencies:
+  build_runner: ^2.3.3
+  json_serializable: ^6.6.1
+  mocktail: ^0.3.0
+  test: ^1.19.2
+  very_good_analysis: ^3.1.0
