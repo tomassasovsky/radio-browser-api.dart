@@ -18,6 +18,8 @@ StationCheck _$StationCheckFromJson(Map<String, dynamic> json) => StationCheck(
       urlCache: json['urlcache'] as String,
       metainfoOverridesDatabase:
           boolFromInt(json['metainfo_overrides_database'] as int?),
+      timingMilliseconds: json['timing_ms'] as int,
+      sslError: boolFromInt(json['ssl_error'] as int?),
       public: boolFromInt(json['public'] as int?),
       name: json['name'] as String?,
       description: json['description'] as String?,
@@ -28,9 +30,7 @@ StationCheck _$StationCheckFromJson(Map<String, dynamic> json) => StationCheck(
       loadbalancer: json['loadbalancer'] as String?,
       serverSoftware: json['server_software'] as String?,
       sampling: json['sampling'] as int?,
-      timingMilliseconds: json['timing_ms'] as int,
       languageCodes: json['languagecodes'] as String?,
-      sslError: boolFromInt(json['ssl_error'] as int?),
       geoLat: (json['geo_lat'] as num?)?.toDouble(),
       geoLong: (json['geo_long'] as num?)?.toDouble(),
       favicon: stringToNull(json['favicon'] as String?),

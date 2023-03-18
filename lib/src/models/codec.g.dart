@@ -11,7 +11,8 @@ AudioCodec _$AudioCodecFromJson(Map<String, dynamic> json) => AudioCodec(
       stationCount: json['stationcount'] as int,
     );
 
-Map<String, dynamic> _$AudioCodecToJson(AudioCodec instance) => <String, dynamic>{
+Map<String, dynamic> _$AudioCodecToJson(AudioCodec instance) =>
+    <String, dynamic>{
       'name': instance.name,
       'stationcount': instance.stationCount,
     };

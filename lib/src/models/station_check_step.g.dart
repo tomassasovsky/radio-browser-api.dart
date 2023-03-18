@@ -9,13 +9,13 @@ part of 'station_check_step.dart';
 StationCheckStep _$StationCheckStepFromJson(Map<String, dynamic> json) =>
     StationCheckStep(
       stepUUID: json['stepuuid'] as String,
-      parentStepUUID: json['parent_stepuuid'] as String?,
       checkUUID: json['checkuuid'] as String,
       stationUUID: json['stationuuid'] as String,
+      creationTimestamp: DateTime.parse(json['creation_iso8601'] as String),
       url: json['url'] as String,
+      parentStepUUID: json['parent_stepuuid'] as String?,
       urlType: json['urltype'] as String?,
       error: json['error'] as String?,
-      creationTimestamp: DateTime.parse(json['creation_iso8601'] as String),
     );
 
 Map<String, dynamic> _$StationCheckStepToJson(StationCheckStep instance) =>
