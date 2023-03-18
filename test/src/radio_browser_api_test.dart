@@ -5,11 +5,14 @@ import 'package:test/test.dart';
 void main() {
   group('RadioBrowserApi', () {
     test('can be instantiated', () async {
-      expect(RadioBrowserApi.austria(), isNotNull);
+      expect(RadioBrowserApi.fromHost('de1.api.radio-browser.info'), isNotNull);
 
-      final countries = await RadioBrowserApi.austria().getCountries();
-      final stations = await RadioBrowserApi.austria()
-          .getStationsByName(name: "America's Greatest 80s Hits");
+      final countries =
+          await RadioBrowserApi.fromHost('de1.api.radio-browser.info')
+              .getCountries();
+      final stations =
+          await RadioBrowserApi.fromHost('de1.api.radio-browser.info')
+              .getStationsByName(name: "America's Greatest 80s Hits");
       expect(countries, isNotNull);
       expect(stations, isNotNull);
     });

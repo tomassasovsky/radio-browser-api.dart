@@ -21,13 +21,7 @@ import 'package:radio_browser_api/src/models/tag.dart';
 /// {@endtemplate}
 class RadioBrowserApi {
   /// {@macro radio_browser_api}
-  const RadioBrowserApi.germany() : host = 'de1.api.radio-browser.info';
-
-  /// {@macro radio_browser_api}
-  const RadioBrowserApi.france() : host = 'fr1.api.radio-browser.info';
-
-  /// {@macro radio_browser_api}
-  const RadioBrowserApi.austria() : host = 'at1.api.radio-browser.info';
+  const RadioBrowserApi.fromHost(this.host);
 
   /// The host of the Radio Browser API.
   final String host;
