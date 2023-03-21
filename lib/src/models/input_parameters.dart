@@ -40,13 +40,13 @@ class InputParameters {
   final int? limit;
 
   /// Returns a map of the parameters
-  Map<String, dynamic> toMap() {
-    return <String, dynamic>{
-      if (order != null) 'order': order,
-      if (reverse != null) 'reverse': reverse,
-      if (hidebroken != null) 'hidebroken': hidebroken,
-      if (offset != null) 'offset': offset,
-      if (limit != null) 'limit': limit,
+  Map<String, String> toMap() {
+    return <String, String>{
+      if (order != null) 'order': order!,
+      if (reverse != null) 'reverse': reverse!.toString(),
+      if (hidebroken != null) 'hidebroken': hidebroken!.toString(),
+      if (offset != null) 'offset': offset!.toString(),
+      if (limit != null) 'limit': limit!.toString(),
     };
   }
 }

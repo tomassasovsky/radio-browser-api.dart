@@ -1,3 +1,7 @@
+# 0.1.0+4
+
+- fix: broken `toMap` function in `InputParameters`
+
 # 0.1.0+3
 
 - feat: deprecated `germany`, `france`, and `austria` constructors in favor of `fromHost`
