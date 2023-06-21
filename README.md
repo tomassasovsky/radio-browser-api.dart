@@ -10,13 +10,13 @@ See the Official API [documentation][api_docs_link] or our [package documentatio
 
 ## Installation 💻
 
-This package requires [Dart][dart_install_link] 2.12.0 or later.
+**Version 1.0.0 and above of this package requires Dart 3 or higher. If you need Dart 2 support, use version 0.1.1+4.**
 
 Add `radio_browser_api` to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  radio_browser_api:
+  radio_browser_api: ^1.0.0
 ```
 
 Install it:
