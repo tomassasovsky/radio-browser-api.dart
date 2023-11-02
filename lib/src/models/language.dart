@@ -9,9 +9,9 @@ part 'language.g.dart';
 class Language {
   /// {@macro languages_struct}
   const Language({
-    required this.name,
-    required this.iso639,
-    required this.stationCount,
+    this.name = '',
+    this.iso639 = '',
+    this.stationCount = 0,
   });
 
   /// {@macro languages_struct}
