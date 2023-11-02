@@ -33,4 +33,9 @@ class Country {
 
   /// Convert a [Country] instance to a JSON object.
   Map<String, dynamic> toJson() => _$CountryToJson(this);
+
+  @override
+  String toString() {
+    return toJson().toString();
+  }
 }

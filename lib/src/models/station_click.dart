@@ -32,4 +32,9 @@ class StationClick {
 
   /// Convert a [StationClick] instance to a JSON object.
   Map<String, dynamic> toJson() => _$StationClickToJson(this);
+
+  @override
+  String toString() {
+    return toJson().toString();
+  }
 }

@@ -60,4 +60,9 @@ class StationCheckStep {
 
   /// Convert a [StationCheckStep] instance to a JSON object.
   Map<String, dynamic> toJson() => _$StationCheckStepToJson(this);
+
+  @override
+  String toString() {
+    return toJson().toString();
+  }
 }

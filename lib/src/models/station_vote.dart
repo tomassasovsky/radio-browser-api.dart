@@ -25,4 +25,9 @@ class StationVote {
 
   /// Convert a [StationVote] instance to a JSON object.
   Map<String, dynamic> toJson() => _$StationVoteToJson(this);
+
+  @override
+  String toString() {
+    return toJson().toString();
+  }
 }

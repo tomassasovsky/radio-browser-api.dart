@@ -31,4 +31,9 @@ class Language {
 
   /// Convert a [Language] instance to a JSON object.
   Map<String, dynamic> toJson() => _$LanguageToJson(this);
+
+  @override
+  String toString() {
+    return toJson().toString();
+  }
 }

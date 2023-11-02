@@ -29,4 +29,9 @@ class State {
 
   /// Convert a [State] instance to a JSON object.
   Map<String, dynamic> toJson() => _$StateToJson(this);
+
+  @override
+  String toString() {
+    return toJson().toString();
+  }
 }

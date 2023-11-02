@@ -49,4 +49,9 @@ class InputParameters {
       if (limit != null) 'limit': limit!.toString(),
     };
   }
+
+  @override
+  String toString() {
+    return toMap().toString();
+  }
 }

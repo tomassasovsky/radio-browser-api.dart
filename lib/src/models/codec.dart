@@ -26,4 +26,9 @@ class AudioCodec {
 
   /// Convert a [AudioCodec] instance to a JSON object.
   Map<String, dynamic> toJson() => _$AudioCodecToJson(this);
+
+  @override
+  String toString() {
+    return toJson().toString();
+  }
 }

@@ -29,4 +29,9 @@ class StationAdd {
 
   /// Convert a [StationAdd] instance to a JSON object.
   Map<String, dynamic> toJson() => _$StationAddToJson(this);
+
+  @override
+  String toString() {
+    return toJson().toString();
+  }
 }
