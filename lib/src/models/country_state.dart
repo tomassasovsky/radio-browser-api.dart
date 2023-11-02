@@ -1,21 +1,22 @@
 import 'package:json_annotation/json_annotation.dart';
 
-part 'state.g.dart';
+part 'country_state.g.dart';
 
 /// {@template states_struct}
 /// States in the database. Countries are divided into state.
 /// {@endtemplate}
 @JsonSerializable()
-class State {
+class CountryState {
   /// {@macro states_struct}
-  const State({
+  const CountryState({
     required this.country,
     required this.name,
     required this.stationCount,
   });
 
   /// {@macro states_struct}
-  factory State.fromJson(Map<String, dynamic> json) => _$StateFromJson(json);
+  factory CountryState.fromJson(Map<String, dynamic> json) =>
+      _$CountryStateFromJson(json);
 
   /// The name of the state.
   final String name;
@@ -27,6 +28,11 @@ class State {
   /// The name of the country.
   final String country;
 
-  /// Convert a [State] instance to a JSON object.
-  Map<String, dynamic> toJson() => _$StateToJson(this);
+  /// Convert a [CountryState] instance to a JSON object.
+  Map<String, dynamic> toJson() => _$CountryStateToJson(this);
+
+  @override
+  String toString() {
+    return toJson().toString();
+  }
 }

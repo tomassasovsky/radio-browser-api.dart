@@ -25,4 +25,9 @@ class Tag {
 
   /// Convert a [Tag] instance to a JSON object.
   Map<String, dynamic> toJson() => _$TagToJson(this);
+
+  @override
+  String toString() {
+    return toJson().toString();
+  }
 }

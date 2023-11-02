@@ -38,4 +38,9 @@ class StationClickCounter {
 
   /// Convert a [StationClickCounter] instance to a JSON object.
   Map<String, dynamic> toJson() => _$StationClickCounterToJson(this);
+
+  @override
+  String toString() {
+    return toJson().toString();
+  }
 }

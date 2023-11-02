@@ -154,4 +154,9 @@ class StationCheck {
 
   /// Convert a [StationCheck] instance to a JSON object.
   Map<String, dynamic> toJson() => _$StationCheckToJson(this);
+
+  @override
+  String toString() {
+    return toJson().toString();
+  }
 }

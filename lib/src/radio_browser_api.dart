@@ -3,10 +3,10 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:radio_browser_api/src/models/codec.dart';
 import 'package:radio_browser_api/src/models/country.dart';
+import 'package:radio_browser_api/src/models/country_state.dart';
 import 'package:radio_browser_api/src/models/input_parameters.dart';
 import 'package:radio_browser_api/src/models/language.dart';
 import 'package:radio_browser_api/src/models/list_response.dart';
-import 'package:radio_browser_api/src/models/state.dart';
 import 'package:radio_browser_api/src/models/station.dart';
 import 'package:radio_browser_api/src/models/station_add.dart';
 import 'package:radio_browser_api/src/models/station_check.dart';
@@ -71,7 +71,7 @@ class RadioBrowserApi {
   /// states. If a filter is given, it will only return the ones containing the
   /// filter as substring. If a country is given,
   /// it will only display states in this country
-  Future<RadioBrowserListResponse<State>> getStates({
+  Future<RadioBrowserListResponse<CountryState>> getStates({
     InputParameters? parameters,
 
     /// If a filter is given, it will only return the ones containing the
@@ -91,7 +91,7 @@ class RadioBrowserApi {
 
     final response = await http.get(uri);
     return RadioBrowserListResponse.fromList(
-      (Map<dynamic, dynamic> map) => State.fromJson(map.cast()),
+      (Map<dynamic, dynamic> map) => CountryState.fromJson(map.cast()),
       jsonDecode(response.body),
       parameters,
     );

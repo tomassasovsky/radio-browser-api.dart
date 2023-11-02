@@ -20,7 +20,7 @@ class Station {
     required this.favicon,
     required this.tags,
     @Deprecated('Use countrycode instead, full name of the country.')
-        required this.country,
+    required this.country,
     required this.countryCode,
     required this.state,
     required this.language,
@@ -179,4 +179,9 @@ class Station {
 
   /// Convert a [Station] instance to a JSON object.
   Map<String, dynamic> toJson() => _$StationToJson(this);
+
+  @override
+  String toString() {
+    return toJson().toString();
+  }
 }
