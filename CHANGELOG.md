@@ -1,3 +1,7 @@
+# 1.0.1
+
+- fix: parse responses with utf8
+
 # 1.0.0
 
 - chore(deps): update `sdk` constraints to `>=3.0.0 <4.0.0`, effectively dropping support for Dart 2. Keep using `0.1.1+4` if you need Dart 2 support.
