@@ -41,7 +41,7 @@ class RadioBrowserApi {
     final response = await http.get(uri);
     return RadioBrowserListResponse.fromList(
       (Map<dynamic, dynamic> map) => Country.fromJson(map.cast()),
-      jsonDecode(response.body),
+      jsonDecode(utf8.decode(response.bodyBytes)),
       parameters,
     );
   }
@@ -62,7 +62,7 @@ class RadioBrowserApi {
     final response = await http.get(uri);
     return RadioBrowserListResponse.fromList(
       (Map<dynamic, dynamic> map) => AudioCodec.fromJson(map.cast()),
-      jsonDecode(response.body),
+      jsonDecode(utf8.decode(response.bodyBytes)),
       parameters,
     );
   }
@@ -92,7 +92,7 @@ class RadioBrowserApi {
     final response = await http.get(uri);
     return RadioBrowserListResponse.fromList(
       (Map<dynamic, dynamic> map) => State.fromJson(map.cast()),
-      jsonDecode(response.body),
+      jsonDecode(utf8.decode(response.bodyBytes)),
       parameters,
     );
   }
@@ -116,7 +116,7 @@ class RadioBrowserApi {
     final response = await http.get(uri);
     return RadioBrowserListResponse.fromList(
       (Map<dynamic, dynamic> map) => Language.fromJson(map.cast()),
-      jsonDecode(response.body),
+      jsonDecode(utf8.decode(response.bodyBytes)),
       parameters,
     );
   }
@@ -140,7 +140,7 @@ class RadioBrowserApi {
     final response = await http.get(uri);
     return RadioBrowserListResponse.fromList(
       (Map<dynamic, dynamic> map) => Tag.fromJson(map.cast()),
-      jsonDecode(response.body),
+      jsonDecode(utf8.decode(response.bodyBytes)),
       parameters,
     );
   }
@@ -165,7 +165,7 @@ class RadioBrowserApi {
     final response = await http.get(uri);
     return RadioBrowserListResponse.fromList(
       (Map<dynamic, dynamic> map) => Station.fromJson(map.cast()),
-      jsonDecode(response.body),
+      jsonDecode(utf8.decode(response.bodyBytes)),
       parameters,
     );
   }
@@ -187,7 +187,7 @@ class RadioBrowserApi {
     final response = await http.get(uri);
     return RadioBrowserListResponse.fromList(
       (Map<dynamic, dynamic> map) => Station.fromJson(map.cast()),
-      jsonDecode(response.body),
+      jsonDecode(utf8.decode(response.bodyBytes)),
       parameters,
     );
   }
@@ -208,7 +208,7 @@ class RadioBrowserApi {
     final response = await http.get(uri);
     return RadioBrowserListResponse.fromList(
       (Map<dynamic, dynamic> map) => Station.fromJson(map.cast()),
-      jsonDecode(response.body),
+      jsonDecode(utf8.decode(response.bodyBytes)),
       parameters,
     );
   }
@@ -230,7 +230,7 @@ class RadioBrowserApi {
     final response = await http.get(uri);
     return RadioBrowserListResponse.fromList(
       (Map<dynamic, dynamic> map) => Station.fromJson(map.cast()),
-      jsonDecode(response.body),
+      jsonDecode(utf8.decode(response.bodyBytes)),
       parameters,
     );
   }
@@ -252,7 +252,7 @@ class RadioBrowserApi {
     final response = await http.get(uri);
     return RadioBrowserListResponse.fromList(
       (Map<dynamic, dynamic> map) => Station.fromJson(map.cast()),
-      jsonDecode(response.body),
+      jsonDecode(utf8.decode(response.bodyBytes)),
       parameters,
     );
   }
@@ -274,7 +274,7 @@ class RadioBrowserApi {
     final response = await http.get(uri);
     return RadioBrowserListResponse.fromList(
       (Map<dynamic, dynamic> map) => Station.fromJson(map.cast()),
-      jsonDecode(response.body),
+      jsonDecode(utf8.decode(response.bodyBytes)),
       parameters,
     );
   }
@@ -296,7 +296,7 @@ class RadioBrowserApi {
     final response = await http.get(uri);
     return RadioBrowserListResponse.fromList(
       (Map<dynamic, dynamic> map) => Station.fromJson(map.cast()),
-      jsonDecode(response.body),
+      jsonDecode(utf8.decode(response.bodyBytes)),
       parameters,
     );
   }
@@ -318,7 +318,7 @@ class RadioBrowserApi {
     final response = await http.get(uri);
     return RadioBrowserListResponse.fromList(
       (Map<dynamic, dynamic> map) => Station.fromJson(map.cast()),
-      jsonDecode(response.body),
+      jsonDecode(utf8.decode(response.bodyBytes)),
       parameters,
     );
   }
@@ -340,7 +340,7 @@ class RadioBrowserApi {
     final response = await http.get(uri);
     return RadioBrowserListResponse.fromList(
       (Map<dynamic, dynamic> map) => Station.fromJson(map.cast()),
-      jsonDecode(response.body),
+      jsonDecode(utf8.decode(response.bodyBytes)),
       parameters,
     );
   }
@@ -362,7 +362,7 @@ class RadioBrowserApi {
     final response = await http.get(uri);
     return RadioBrowserListResponse.fromList(
       (Map<dynamic, dynamic> map) => Station.fromJson(map.cast()),
-      jsonDecode(response.body),
+      jsonDecode(utf8.decode(response.bodyBytes)),
       parameters,
     );
   }
@@ -384,7 +384,7 @@ class RadioBrowserApi {
     final response = await http.get(uri);
     return RadioBrowserListResponse.fromList(
       (Map<dynamic, dynamic> map) => Station.fromJson(map.cast()),
-      jsonDecode(response.body),
+      jsonDecode(utf8.decode(response.bodyBytes)),
       parameters,
     );
   }
@@ -406,7 +406,7 @@ class RadioBrowserApi {
     final response = await http.get(uri);
     return RadioBrowserListResponse.fromList(
       (Map<dynamic, dynamic> map) => Station.fromJson(map.cast()),
-      jsonDecode(response.body),
+      jsonDecode(utf8.decode(response.bodyBytes)),
       parameters,
     );
   }
@@ -428,7 +428,7 @@ class RadioBrowserApi {
     final response = await http.get(uri);
     return RadioBrowserListResponse.fromList(
       (Map<dynamic, dynamic> map) => Station.fromJson(map.cast()),
-      jsonDecode(response.body),
+      jsonDecode(utf8.decode(response.bodyBytes)),
       parameters,
     );
   }
@@ -447,7 +447,7 @@ class RadioBrowserApi {
     final response = await http.get(uri);
     return RadioBrowserListResponse.fromList(
       (Map<dynamic, dynamic> map) => Station.fromJson(map.cast()),
-      jsonDecode(response.body),
+      jsonDecode(utf8.decode(response.bodyBytes)),
       parameters,
     );
   }
@@ -485,7 +485,7 @@ class RadioBrowserApi {
     final response = await http.get(uri);
     return RadioBrowserListResponse.fromList(
       (Map<dynamic, dynamic> map) => StationCheck.fromJson(map.cast()),
-      jsonDecode(response.body),
+      jsonDecode(utf8.decode(response.bodyBytes)),
       InputParameters(
         limit: limit,
       ),
@@ -520,7 +520,7 @@ class RadioBrowserApi {
     final response = await http.get(uri);
     return RadioBrowserListResponse.fromList(
       (Map<dynamic, dynamic> map) => StationClick.fromJson(map.cast()),
-      jsonDecode(response.body),
+      jsonDecode(utf8.decode(response.bodyBytes)),
     );
   }
 
@@ -546,7 +546,7 @@ class RadioBrowserApi {
     final response = await http.get(uri);
     return RadioBrowserListResponse.fromList(
       (Map<dynamic, dynamic> map) => StationCheckStep.fromJson(map.cast()),
-      jsonDecode(response.body),
+      jsonDecode(utf8.decode(response.bodyBytes)),
     );
   }
 
@@ -670,7 +670,7 @@ class RadioBrowserApi {
     final response = await http.get(uri);
     return RadioBrowserListResponse.fromList(
       (Map<dynamic, dynamic> map) => Station.fromJson(map.cast()),
-      jsonDecode(response.body),
+      jsonDecode(utf8.decode(response.bodyBytes)),
       parameters,
     );
   }
@@ -697,7 +697,7 @@ class RadioBrowserApi {
     final response = await http.get(uri);
     return RadioBrowserListResponse.fromList(
       (Map<dynamic, dynamic> map) => Station.fromJson(map.cast()),
-      jsonDecode(response.body),
+      jsonDecode(utf8.decode(response.bodyBytes)),
     );
   }
 
@@ -715,7 +715,7 @@ class RadioBrowserApi {
     final response = await http.get(uri);
     return RadioBrowserListResponse.fromList(
       (Map<dynamic, dynamic> map) => Station.fromJson(map.cast()),
-      jsonDecode(response.body),
+      jsonDecode(utf8.decode(response.bodyBytes)),
     );
   }
 
@@ -733,7 +733,7 @@ class RadioBrowserApi {
     final response = await http.get(uri);
     return RadioBrowserListResponse.fromList(
       (Map<dynamic, dynamic> map) => Station.fromJson(map.cast()),
-      jsonDecode(response.body),
+      jsonDecode(utf8.decode(response.bodyBytes)),
     );
   }
 
@@ -751,7 +751,7 @@ class RadioBrowserApi {
     final response = await http.get(uri);
     return RadioBrowserListResponse.fromList(
       (Map<dynamic, dynamic> map) => Station.fromJson(map.cast()),
-      jsonDecode(response.body),
+      jsonDecode(utf8.decode(response.bodyBytes)),
     );
   }
 
@@ -769,7 +769,7 @@ class RadioBrowserApi {
     final response = await http.get(uri);
     return RadioBrowserListResponse.fromList(
       (Map<dynamic, dynamic> map) => Station.fromJson(map.cast()),
-      jsonDecode(response.body),
+      jsonDecode(utf8.decode(response.bodyBytes)),
     );
   }
 
@@ -801,7 +801,7 @@ class RadioBrowserApi {
     final response = await http.get(uri);
     return RadioBrowserListResponse.fromList(
       (Map<dynamic, dynamic> map) => Station.fromJson(map.cast()),
-      jsonDecode(response.body),
+      jsonDecode(utf8.decode(response.bodyBytes)),
       InputParameters(
         limit: limit ?? 999999,
       ),
@@ -822,7 +822,7 @@ class RadioBrowserApi {
     final response = await http.get(uri);
     return RadioBrowserListResponse.fromList(
       (Map<dynamic, dynamic> map) => Station.fromJson(map.cast()),
-      jsonDecode(response.body),
+      jsonDecode(utf8.decode(response.bodyBytes)),
     );
   }
 
@@ -844,7 +844,8 @@ class RadioBrowserApi {
     );
 
     final response = await http.get(uri);
-    return StationVote.fromJson((jsonDecode(response.body) as Map).cast());
+    return StationVote.fromJson(
+        (jsonDecode(utf8.decode(response.bodyBytes)) as Map).cast());
   }
 
   /// Add a radio station to the database.
@@ -894,6 +895,7 @@ class RadioBrowserApi {
     );
 
     final response = await http.post(uri);
-    return StationAdd.fromJson((jsonDecode(response.body) as Map).cast());
+    return StationAdd.fromJson(
+        (jsonDecode(utf8.decode(response.bodyBytes)) as Map).cast());
   }
 }
